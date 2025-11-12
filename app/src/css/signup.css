@@ -1,0 +1,244 @@
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Logo Styles */
+.navbar .logo-text {
+font-weight: bold;
+font-size: 24px;
+color: white;
+text-decoration: none; /* This ensures it has no underline or link-like styles */
+}
+
+
+/* Navigation Links Styles */
+.navbar .links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .links li {
+  margin-left: 70px;
+  padding-right: 50px;
+}
+
+.navbar .links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .links li a:hover {
+  color: wheat;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: black;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar .links li {
+    margin: 15px 0;
+  }
+
+  .navbar .links li a {
+    font-size: 16px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar.active .links {
+    display: flex;
+  }
+}
+
+
+
+
+
+/* Main container for the signup form */
+.signup-container {
+background-color: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+padding: 40px;
+width: 100%;
+max-width: 450px;
+text-align: center;
+}
+
+/* Title and description styling */
+h2 {
+font-size: 26px;
+color: #333;
+margin-bottom: 15px;
+font-weight: 600;
+}
+
+/* p {
+font-size: 16px;
+margin-bottom: 25px;
+color: #555;
+line-height: 1.5;
+} */
+
+/* Form Styling */
+form {
+width: 100%;
+}
+
+/* Input Group */
+.input-group {
+margin-bottom: 20px;
+text-align: left;
+}
+
+.input-group label {
+display: block;
+font-size: 16px;
+margin-bottom: 8px;
+color: #555;
+font-weight: 500;
+}
+
+.input-group input {
+width: 100%;
+padding: 12px;
+font-size: 16px;
+border: 1px solid #ddd;
+border-radius: 8px;
+outline: none;
+transition: all 0.3s ease;
+background-color: #f9f9f9;
+color: #333;
+}
+
+.input-group input:focus {
+border-color: #0066cc;
+background-color: #ffffff;
+}
+
+.input-group input::placeholder {
+color: #888;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+width: 100%;
+padding: 14px;
+background-color: #0066cc;
+color: white;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.3s ease;
+font-weight: 600;
+}
+
+.submit-btn:hover {
+background-color: #005bb5;
+}
+
+/* Link Styling for Login */
+.login-link {
+margin-top: 20px;
+font-size: 15px;
+color: #777;
+}
+
+.login-link a {
+color: #0066cc;
+text-decoration: none;
+font-weight: 500;
+}
+
+.login-link a:hover {
+text-decoration: underline;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 480px) {
+.signup-container {
+  padding: 20px;
+  width: 90%;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.input-group input {
+  font-size: 14px;
+}
+
+.submit-btn {
+  font-size: 14px;
+}
+}
+ /* Footer Bottom */
+.footer-bottom {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Ensure the footer sticks to the bottom if the content is short */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

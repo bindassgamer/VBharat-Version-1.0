@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="logo">
+          <a href="index.html">
+            <img src="media/LOGO.PNG" alt="VR Pilgrimage Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pilgrimages.html">Pilgrimages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+            <button class="login-btn" onclick="window.location.href='login.html'">Login</button> <!-- Login button -->
+
+        </ul>
+
+        <!-- Language Selection Button -->
+        <div class="dropdown">
+            <button class="language-btn">Select Language</button>
+            <div class="dropdown-content">
+                <a href="?lang=en">English</a>
+                <a href="?lang=hi">Hindi</a>
+                <a href="?lang=es">Spanish</a>
+                <a href="?lang=fr">French</a>
+            </div>
+        </div>
+        
+    </nav>
+
+
+
+     <!-- Login Form Section -->
+  <div class="container">
+    <div class="login-box" id="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Login</button><br>
+        <br><p class="sign-up-text">New User? <a href="#" id="sign-up-btn">Sign Up</a></p>
+      </form>
+    </div>
+
+    <!-- Sign Up Form (Hidden Initially) -->
+    <div class="signup-box hidden" id="signup-box">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="login-prompt">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+        
+      </form>
+
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; /* Sets the entire background to black */
+    color: white; /* Ensures text is visible against the black background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 15px;
+    z-index: 10;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar .logo img {
+    width: 150px;
+    padding-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: -apple-system, ;
+    font-weight:700;
+}
+
+.nav-links a:hover {
+    color: #f4b400;
+}
+
+.login-btn {
+    background-color:#ffa500; /* Green background */
+    color:BLACK; /* White text */
+    border: none; /* Remove border */
+    padding: 15px 25px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for button */
+    margin-left: 200px; /* Space from other elements */
+    
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+    
+}
+
+.login-btn:hover {
+    background-color: white; /* Darker green on hover */
+}
+
+
+.dropdown {
+    position: relative; /* Position relative for dropdown */
+    display: inline-block; /* Inline block for button */
+}
+
+.language-btn {
+    background-color: orange; /* Green background */
+    color: black; /* White text */
+    border: none; /* Remove border */
+    padding: 15px 25px; /* Padding */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition effect */
+    margin-left: 5px; /* Space from other elements */
+    margin-right: 30px;
+}
+
+.language-btn:hover {
+    background-color: white; /* Darker green on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown content */
+    position: absolute; /* Position absolute */
+    background-color: #f9f9f9; /* Background color */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow */
+    z-index: 1; /* Stack on top */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Background on hover */
+}
+
+
+
+/* Pilgrimages Section */
+#pilgrimages {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.place {
+    width: 30%;
+    text-align: center;
+}
+
+.place img {
+    width: 100%;
+    height: auto;
+}
+
+.place h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.full-bg {
+    background-image: url('media/HERO_IMAGE1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-overlay h2 {
+    
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1px;
+    
+}
+
+
+.video-container {
+    position: relative; /* Position for overlay */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+}
+
+.video-container video {
+    width: 100%; /* Full width video */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.video-overlay {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for center */
+    color: white; /* Text color */
+    font-size: 24px; /* Font size */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Transition for fade effect */
+}
+
+.video-container:hover .video-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+
+
+.text-background {
+    background-image: url('media/banner1.g'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    padding: 0px 0; /* Space around the text */
+    text-align: center; /* Center text */
+    color: white; /* Text color for visibility */
+}
+
+.small-text {
+    font-size: 14px; /* Small text size */
+    color: orange; /* Text color */
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+}
+
+.large-text {
+    font-size: 44px; /* Larger text size */
+    font-weight: bold; /* Bold text */
+    color:white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+}
+
+
+
+/* Block Section Styles */
+.block-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.block {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.block img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.block-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+.block:hover .block-text {
+    opacity: 1;
+}
+
+/* View All Locations Button Styles */
+.view-all-button {
+    text-align: center;
+    margin: 40px 0; /* Adjust spacing as needed */
+}
+
+
+.view-all-button button {
+    background-color: black; /* Light background color */
+    color: #ffa500; /* Orange text color */
+    border: 1px solid #343434; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1.5 rem; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Transition effect */
+}
+
+.view-all-button button:hover {
+    background-color: white; /* Change background on hover */
+    color: black; /* Change text color on hover */
+    transform: scale(1.5); /* Slightly increase size */
+}
+
+
+.section-border {
+    border-top: 10px solid black; /* 5px black border */
+    width: 100%;
+    margin: 27px 0; /* Adjust spacing between sections */
+}
+
+
+/* Who We Are Section Styles */
+.who-we-are-section {
+    display: flex;
+    background-color: beige; /* Change background color as needed */
+    padding: 50px; /* Padding for the section */
+    align-items: center; /* Center items vertically */
+}
+
+.left-image {
+    flex: 2.2; /* Allow the image div to take 1 part of the flex space */
+    margin-right: 40px; /* Space between image and text */
+}
+
+.left-image img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.right-content {
+    flex: 2.2; /* Allow the text div to take 2 parts of the flex space */
+}
+
+.who-we-are-title {
+    color: #ffa500; /* Orange color for title */
+    font-size: 1rem; /* Font size for the title */
+    margin: 0; /* Remove margin */
+    font-weight: bold;
+    
+}
+
+.who-we-are-heading {
+    font-weight: bold; /* Bold text */
+    font-size: 2.0rem; /* Font size for heading */
+    margin: 10px 0; /* Margin for spacing */
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.who-we-are-description {
+    font-size: 1.2rem; /* Smaller font size for description */
+    color: black; /* Light color for description */
+}
+
+.contact-button {
+    display: inline-block; /* Make it an inline block */
+    background-color: #ffa500; /* Button background color */
+    color:black; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-top: 20px; /* Space above button */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.contact-button:hover {
+    background-color: #000000; /* Darker orange on hover */
+}
+
+
+.section-border {
+    border-top: 10px solid black; /* 5px black border */
+    width: 100%;
+    margin: 27px 0; /* Adjust spacing between sections */
+}
+
+
+/* Top Areas Section Styles */
+.top-areas-section {
+    text-align: center; /* Center the text */
+    margin: 40px 0; /* Space above and below */
+}
+
+.top-areas-title {
+    color: orange; /* Orange color for title */
+    font-size: 1rem; /* Font size for title */
+    margin: 0; /* Remove margin */
+}
+
+.find-temples-heading {
+    font-weight: bold; /* Bold text */
+    font-size: 1.5rem; /* Larger font size for heading */
+    color: white; /* Black color for heading */
+    margin: 10px 0; /* Margin for spacing */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-border {
+    border-top: 10px solid black; /* 5px black border */
+    width: 100%;
+    margin: 27px 0; /* Adjust spacing between sections */
+}
+
+/* Image Blocks Section Styles */
+.image-blocks-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px; /* Space between blocks */
+    margin-left: 20px;
+}
+
+.image-block {
+    position: relative; /* Position for overlay */
+    width: calc(33.33% - 20px); /* Each of the first three blocks occupies 33.33% of width, minus gap */
+}
+
+.wide-block-33 {
+    width: calc(33.33% - 20px); /* The left block occupies 33% of the width */
+    
+}
+
+#full-width img {
+    width: 100%;
+}
+
+.wide-block-67 {
+    width: 65.67%; /* The right block occupies 67% of the width */
+    
+}
+
+.image-block img {
+    width: 400px; /* Make images responsive */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.image-block:hover img {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+
+.text-overlay {
+    position: absolute; /* Position overlay */
+    bottom: 10px; /* Position at the bottom */
+    left: 10px; /* Position to the left */
+    color: white; /* Text color */
+    
+    padding: 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+}
+
+.location-button {
+    display: inline-block; /* Inline block for button */
+    margin-top: 5px; /* Space above button */
+    padding: 5px 10px; /* Padding for button */
+    color: white; /* Button text color */
+    background-color: black; /* Button background color */
+    text-decoration: none; /* Remove underline */
+    border: 1.5px solid white;
+    border-radius: 7px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.location-button:hover {
+    background-color: white; /* Darker orange on hover */
+    color:black;
+}
+
+.section-border {
+    border-top: 10px solid black; /* 5px black border */
+    width: 100%;
+    margin: 27px 0; /* Adjust spacing between sections */
+}
+
+.section-border {
+    border-top: 10px solid black; /* 5px black border */
+    width: 100%;
+    margin: 27px 0; /* Adjust spacing between sections */
+}
+
+/* Background Section Styles */
+.background-section {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background-image: url('media/backround4.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    padding: 20px; /* Padding around section */
+    color: white; /* Text color */
+    
+    
+}
+
+.left-image, .right-image {
+    flex: 1; /* Equal space for left and right images */
+}
+
+.left-image img, .right-image img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    
+}
+
+.text-content {
+    flex: 2; /* More space for text content */
+    text-align: center; /* Center align text */
+}
+
+h2 {
+    font-weight: bold; /* Bold text */
+}
+
+.light-text {
+    font-weight: lighter; /* Light text */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.contact-info {
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.info-item {
+    display: flex; /* Flexbox for icon and text */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.icon {
+    margin-right: 10px; /* Space between icon and text */
+    width:20px;
+    height: 20px;
+}
+
+.contact-button {
+    display: inline-block; /* Inline block for button */
+    padding: 10px 20px; /* Padding for button */
+    background-color: #ffa500; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.contact-button:hover {
+    background-color: white; /* Darker orange on hover */
+    color: #000000;
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between sections */
+    padding: 20px; /* Padding around footer */
+    background-color: black; /* Footer background color */
+    color: white; /* Text color */
+}
+
+.footer-section {
+    flex: 1; /* Equal space for each section */
+    padding: 50px; /* Padding inside sections */
+}
+
+.footer-section h3 {
+    border-bottom: 1px solid orange; /* Underline effect */
+    padding-bottom: 5px; /* Space between title and underline */
+    text-align: center;
+}
+
+.footer-section ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+    margin: 10px 0; /* Margin for spacing */
+    text-align: center;
+}
+
+.footer-section ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.footer-section ul li a:hover {
+    color: orange; /* Color change on hover */
+}
+
+.instagram-gallery {
+    display: flex; /* Flexbox for image gallery */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+}
+
+.instagram-image {
+    position: relative; /* Position for hover effect */
+    margin: 5px; /* Margin for spacing */
+    width: calc(33.33% - 10px); /* Three images per row with spacing */
+}
+
+.instagram-image img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: opacity 0.3s; /* Transition effect */
+}
+
+.instagram-image:hover img {
+    opacity: 0.2; /* Fade effect on hover */
+}
+
+.instagram-image:hover::after {
+    content: ''; /* Instagram logo effect */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('media/iglogo.png') center center no-repeat; /* Instagram logo */
+    background-size: 50%; /* Logo size */
+    opacity: 1; /* Make logo visible */
+}
+
+.contact{
+    text-align: center;
+}
+
+
+
+/* Border Area Styles */
+.border-area {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    padding: 25px; /* Padding around the area */
+    background-color: BLACK; /* Background color */
+    color: white; /* Text color */
+    border-top: 2px solid WHITE; /* Top border */
+}
+
+.terms {
+    display: flex; /* Flexbox for terms section */
+}
+
+.terms a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 15px; /* Space between links */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.terms a:hover {
+    color: orange; /* Color change on hover */
+}
+
+.copyright {
+    text-align: right; /* Align text to the right */
+    transition: color 0.3s; /* Transition effect */
+}
+
+.copyright:hover {
+    color: orange; /* Color change on hover */
+}

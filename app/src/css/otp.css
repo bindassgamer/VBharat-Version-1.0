@@ -1,0 +1,166 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  
+  
+  @media (max-width: 768px) {
+    .navbar .links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: black;
+      width: 200px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .navbar .links li {
+      margin: 15px 0;
+    }
+  
+    .navbar .links li a {
+      font-size: 16px;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .navbar.active .links {
+      display: flex;
+    }
+  }
+ 
+
+
+/* OTP Verification Page Styles */
+.otp-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 60px auto;
+}
+
+/* Heading */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Description Text */
+.otp-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* OTP Input Styles */
+.otp-input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.otp-input-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.otp-input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.otp-input-group input:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color:black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #005bb5;
+}
+
+  /* Input Field Styles */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #0066cc;
+    outline: none;
+  }
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .otp-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+
+  .otp-input-group input {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,237 @@
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background to contrast the navbar */
+}
+
+/* Navbar Styles (Already Provided) */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+/* Logo Styles */
+.navbar .logo-text {
+font-weight: bold;
+font-size: 24px;
+color: white;
+text-decoration: none; /* This ensures it has no underline or link-like styles */
+}
+
+.navbar .links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .links li {
+  margin-left: 70px;
+  padding-right: 50px;
+}
+
+.navbar .links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .links li a:hover {
+  color: wheat;
+}
+
+/* Hamburger Menu for Mobile (Already Provided) */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: black;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar .links li {
+    margin: 15px 0;
+  }
+
+  .navbar .links li a {
+    font-size: 16px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar.active .links {
+    display: flex;
+  }
+}
+
+/* Login Page Styles */
+.login-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 60px auto 0; /* Adds margin to separate from navbar */
+}
+
+/* Heading */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Field Styles */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Ensure the footer sticks to the bottom if the content is short */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

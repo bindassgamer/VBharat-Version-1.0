@@ -78,9 +78,9 @@ python generate_voice.py
 
 | Feature | Screenshot |
 |----------|-------------|
-| 3D Reconstructed Heritage Site | 🏛️ *(Insert image link)* |
-| VR Tour Interface | 🕶️ *(Insert image link)* |
-| AI Voice Narration | 🎧 *(Insert image link)* |
+| 3D Reconstructed Heritage Site | 🏛️ ** |
+| VR Tour Interface | 🕶️ ** |
+| AI Voice Narration | 🎧 ** |
 
 ---
 
@@ -121,7 +121,10 @@ xr-heritage-framework/
 ---
 
 ## 🧑‍💻 Contributors
-- **Prajapati Abhay** – Developer & Researcher  
+- **Prajapati Abhay** – Developer & Researcher
+- **Adarsh Singh** – Designer
+- **Shaiban Sufi** – Developer
+- **Anuj Yadav** – Documentation & Researcher
 - **Dr. Roopali Lolage** – Project Guide  
 
 ---
@@ -152,3 +155,4 @@ If you find this project helpful or want to contribute:
 ---
 
 **Preserving the past — one digital frame at a time.**
+
